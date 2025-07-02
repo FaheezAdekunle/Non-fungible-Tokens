@@ -1,0 +1,15 @@
+{
+    "name": "Ayanakoji Kiyotaka",
+    "description": "Classroom of the Elite finest, NFT.",
+    "image": "ipfs://QmaYwFagH9fVXvRZVDDJ6Jg5Q8qf9KLTnQ9tf2MeWXbZn8",
+    "attributes": [
+        {
+            "trait_type": "Emotion",
+            "value": "pissed"
+        },
+        {
+            "trait_type": "face",
+            "value": "condescending"
+        }
+    ]
+}
