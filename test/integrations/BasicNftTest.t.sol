@@ -5,6 +5,7 @@ pragma solidity ^0.8.19;
 import {Test} from "forge-std/Test.sol";
 import {DeployBasicNft} from "script/DeployBasicNft.s.sol";
 import {BasicNft} from "src/BasicNft.sol";
+import {MintBasicNft} from "script/Interactions.s.sol";
 
 contract BasicNftTest is Test {
     DeployBasicNft public deployer;
@@ -78,12 +79,5 @@ contract BasicNftTest is Test {
         assertEq(basicNft.ownerOf(0), bob);
     }
 
-    function testMintNftOnContract() public {
-        // Arrange
-        vm.prank(contractAd);
-        basicNft.mintNft(PUG);
-
-        // Act / Assert
-
-    }
+    
 }
