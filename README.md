@@ -32,5 +32,5 @@ forge build
 # License
 MIT(https://choosealicense.com/licenses/mit/)
 
-# Follow Me On All Socials
+# Follow Me On Twitter
 ![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/mibunna)
