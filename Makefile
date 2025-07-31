@@ -33,7 +33,7 @@ anvil :; anvil -m 'test test test test test test test test test test test junk' 
 NETWORK_ARGS := --rpc-url http://localhost:8545 --private-key $(DEFAULT_ANVIL_KEY) --broadcast
 
 ifeq ($(findstring --network sepolia,$(ARGS)),--network sepolia)
-	NETWORK_ARGS := --rpc-url $(SEPOLIA_RPC_URL) --account dummyKey --sender 0xb7Ec73011D6Ac41Ec33eeAd9C362445095726249 --broadcast --verify --etherscan-api-key $(ETHERSCAN_API_KEY) -vvvv
+	NETWORK_ARGS := --rpc-url $(SEPOLIA_RPC_URL) --account dummyKey --sender 0xb7Ec73011D6Ac41Ec33eeAd9C362445095726249 --broadcast --verify --etherscan-api-key $(ETHERSCAN_API_KEY)
 endif
 
 deploy:
@@ -43,7 +43,7 @@ mint:
 	@forge script script/Interactions.s.sol:MintBasicNft ${NETWORK_ARGS}
 
 deployMood:
-	@forge script script/DeployMoodNft.s.sol:DeployMoodNft $(NETWORK_ARGS)
+	@forge script script/DeployMoodNft.s.sol:DeployMoodNft $(ARGS)
 
 mintMood:
 	cast send 0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512 "mintNft()"
